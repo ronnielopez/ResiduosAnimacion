@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Residuos -  Animacion</title>
+  <title>Residuos - Animacion</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sen&amp;display=swap'>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div id="main">
+  <!-- partial:index.partial.html -->
+  <div id="main">
     <div id="info" style="display: none;">
-      <h1 class="letra">Bienvenidos a mi proyecto de<br> 
-        Manejo de residuos de aparatos 
-        <br>electricos y electronicos.</h1>
+      <h1 class="letra-b">Bienvenidos a mi proyecto de<br>
+        Manejo de residuos de aparatos
+        <br>electricos y electronicos.
+      </h1>
       <p class="sub-letra">Creado por: Ronnie López</p>
     </div>
     <div id="info2" style="display: none;">
       <h1 class="letra">Huellas Ecológicas</h1>
-      <a href="#" class="button-B">Ver todas las huellas</a>
+      <a data-bs-toggle="modal" data-bs-target="#Huellas" class="button-B">Ver todas las huellas</a>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="Huellas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Huellas Ecológicas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
     </div>
     <div id="info3" style="display: none;">
       <h1 class="letra">Cultura Ambiental</h1>
@@ -28,19 +52,27 @@
       <h1 class="letra">Conclusión</h1>
       <a href="#" class="button-B">Ver más</a>
     </div>
-    
+
     <div class="content">
-        <p>Puedes presionar las teclas <kbd>▲</kbd> <kbd>▼</kbd> en tú teclado para navegar en la página. Tambien con el scroll del mouse.</p>
-        <p><a target="_blank">Ronnie López</a> // <a target="_blank">#LL100719</a>
+      <p>Puedes presionar las teclas <kbd>▲</kbd> <kbd>▼</kbd> en tú teclado para navegar en la página. Tambien con el
+        scroll del mouse.</p>
+      <p><a target="_blank">Ronnie López</a> // <a target="_blank">#LL100719</a>
     </div>
     <div class="buttons">
-        <button class="next" onclick="go(-1)"></button>
-        <button class="prev" onclick="go(1)"></button>
+      <button class="next" onclick="go(-1)"></button>
+      <button class="prev" onclick="go(1)"></button>
     </div>
-</div>
-<!-- partial -->
+  </div>
+  <!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
-  <script  src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>

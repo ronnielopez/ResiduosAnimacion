@@ -15,8 +15,6 @@ let images = [
 let current = 0;
 let playing = false;
 
-
-
 for (let i in images) {
   new Image().src = images[i];
 }

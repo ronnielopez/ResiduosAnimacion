@@ -157,8 +157,8 @@ body {
   margin: 0.5em auto;
 }
 .content kbd {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border: 1px solid white;
   display: inline-block;
   border-radius: 3px;

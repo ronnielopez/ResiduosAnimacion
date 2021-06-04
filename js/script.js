@@ -7,7 +7,7 @@ const info4 = document.getElementById('info4');
 let parts = [];
 
 let images = [
-  "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
+  "https://media.gq.com.mx/photos/5d5fede9e640cd0009a45b7e/16:9/w_1920,c_limit/aire.jpg",
   "https://cdn.hovia.com/app/uploads/Green-Tropical-Plant-Wallpaper-Mural-Plain.jpg",
   "https://images.squarespace-cdn.com/content/v1/58f8719c20099e4ee8f00783/1560858968195-3VYKW8C7IK00782IBJ8N/ke17ZwdGBToddI8pDm48kM_7jmUC-RyB-fa6m4uHSml7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWVaKOtxYD4pZkIk17N8ApxkFHPhlbZftWDkZ8jkyPQ4vb3PiBfwt-qYfVQRKl72mQ/Wallpaper-Malavida-Green-Top-Image.jpg",
   "https://wallpaperaccess.com/full/1267226.jpg"

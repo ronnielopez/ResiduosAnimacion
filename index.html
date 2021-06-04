@@ -23,18 +23,44 @@
     </div>
     <div id="info2" style="display: none;">
       <h1 class="letra">Huellas Ecológicas</h1>
-      <a data-bs-toggle="modal" data-bs-target="#Huellas" class="button-B">Ver todas las huellas</a>
-      
+      <div class="row links">
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#carbono" class="button-B1">Huella de Carbono</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#ecologica" class="button-B1">Huella Ecológica</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#hidrica" class="button-B1">Huella Hídrica</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#digital" class="button-B1">Huella Digital</a>
+        </div>
+      </div>
+
       <!-- Modal -->
-      <div class="modal fade" id="Huellas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+      <div class="modal fade" id="carbono" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Huellas Ecológicas</h5>
+            <div class="modal-header text-center">
+              <h5 class="modal-title" id="exampleModalLabel">Huella de Carbono</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body text-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Carbon_footprint_representation.jpg/225px-Carbon_footprint_representation.jpg"
+                alt="">
+              <h3>¿Qué es la Huella de Carbono?</h3>
+              <p> Es un indicador ambiental que pretende reflejar
+                "la totalidad de gases de efecto invernadero (GEI) emitidos
+                por efecto directo o indirecto de un individuo, organización,
+                evento o producto". Tal impacto ambiental es medido llevando a
+                cabo un inventario de emisiones de GEI o un análisis de ciclo de
+                vida según la tipología de huella, siguiendo normativas internacionales
+                reconocidas, tales como ISO 2007. , El ISO 14069, ISO 14067, PAS 2050 o GHG
+                Protocol entre otras. La huella de carbono se mide en masa de CO₂ equivalente.
+                Una vez conocido el tamaño y la huella, es posible implementar una estrategia
+                de reducción o compensación , públicos o privados.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
@@ -43,6 +69,95 @@
         </div>
       </div>
       <!-- Modal -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="ecologica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h5 class="modal-title" id="exampleModalLabel">Huella Ecológica</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="https://www.renovablesverdes.com/wp-content/uploads/2017/11/Huella-ecol%C3%B3gica-830x724.jpg" alt="" height="200px">
+              <h3>¿Qué es la Huella Ecólogica?</h3>
+              <p class="justify">Analiza los patrones de consumo de recursos y la producción de desechos de una 
+                población determinada; ambos se expresan en áreas biológicamente productivas necesarias 
+                para mantener tales servicios. 
+                <br>
+                La huella muestra el cálculo de recursos específicos y 
+                suma los efectos por la falta de recursos. Es una herramienta que ayuda a analizar la 
+                demanda de naturaleza por parte de la humanidad.
+                <br>
+                Mide la superficie necesaria (calculada en hectáreas) para producir los recursos 
+                consumidos por un ciudadano, una actividad, país, ciudad o región, etc, así como la 
+                necesaria para absorber los residuos que genera, independientemente de donde estén 
+                localizadas estas áreas.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
+       <!-- Modal -->
+       <div class="modal fade" id="hidrica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h5 class="modal-title" id="exampleModalLabel">Huella Hídrica</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="https://www.iagua.es/sites/default/files/styles/thumbnail-630x345/public/huella-hidrica-aquafides.jpg?itok=9GLhv5wh" alt="" height="200px">
+              <h3>¿Qué es la Huella Hídrica?</h3>
+              <p class="justify">Es un indicador del uso de agua dulce que hace referencia tanto al 
+                uso directo del agua de un consumidor o productor, como a su uso indirecto. La huella 
+                hídrica puede considerarse como un indicador integral de la apropiación de los recursos 
+                de agua dulce, ya que se utiliza para medir el volumen total de agua dulce usado para 
+                producir los bienes y servicios producidos por una empresa, o consumidos por un individuo
+                o comunidad.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://huelladeciudades.com/AppHHCali/main.html#calcu" class="btn btn-primary">Calcular mi huella hídrica</a>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="digital" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h5 class="modal-title" id="exampleModalLabel">Huella Digital</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="https://lh3.googleusercontent.com/proxy/RX5SncpWyLzeLhUZfD7gJ1DfXHD9mIfqDgi3vEaCtZ9SyPvExE2hBaLabKUh1Fam1pPDDqbSfKDJHeO1fkaBSn37Xu_0KjZe3VeBdeLWhQ3zs1pzYlCADRb8iS_aNd3EeQ40jQ" alt="" height="200px">
+              <h3>¿Qué es la Huella Digital?</h3>
+              <p class="justify">Esta se define como el conjunto de actividades digitales que un usuario 
+                lleva a cabo en internet y que además son rastreables. Es información que se recoge de 
+                forma pasiva (mediante ‘cookies’ en las páginas web que navegamos) y activa (la 
+                publicación de un ‘post’ en una red social). Se almacena en servidores, emplazados 
+                generalmente en grandes centros de datos.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
+
     </div>
     <div id="info3" style="display: none;">
       <h1 class="letra">Cultura Ambiental</h1>

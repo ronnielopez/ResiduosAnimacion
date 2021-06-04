@@ -173,3 +173,31 @@ body {
 .content a:hover {
   padding-bottom: 1px;
 }
+
+
+.button-B1 {
+  font-size: 1.0em;
+  color: white;
+  display: block;
+}
+.button-B1:hover {
+  color: white;
+
+}
+.links{
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+  display: block;
+}
+
+.justify{
+  text-align: justify !important;
+}

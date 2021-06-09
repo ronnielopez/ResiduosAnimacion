@@ -52,7 +52,20 @@
     </div>
     <div id="info3" style="display: none;">
       <h1 class="letra">Cultura Ambiental</h1>
-      <a data-bs-toggle="modal" data-bs-target="#cultura" class="button-B">Ver más</a>
+      <div class="row links">
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#cultura" class="button-B1">Cultura</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#tipos" class="button-B1">Tipos de RAEE</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#principio" class="button-B1">Principio EPR</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#convenio" class="button-B1">Convenio de Basilea</a>
+        </div>
+      </div>
     </div>
     <div id="info4" style="display: none;">
       <h1 class="letra">Conclusión</h1>
@@ -178,9 +191,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <img
-            src="https://cdn2.hubspot.net/hubfs/5899204/huella-digital.jpg"
-            alt="" height="200px">
+          <img src="https://cdn2.hubspot.net/hubfs/5899204/huella-digital.jpg" alt="" height="200px">
           <h3>¿Qué es la Huella Digital?</h3>
           <p class="justify">Esta se define como el conjunto de actividades digitales que un usuario
             lleva a cabo en internet y que además son rastreables. Es información que se recoge de
@@ -228,6 +239,183 @@
   <!-- Modal -->
 
   <!-- Modal -->
+  <div class="modal fade" id="tipos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Tipos de RAEE - División en fracciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center container">
+          <div class="row" id="section1">
+
+            <h2 class="py-2">Primera Division</h2>
+            <div class="col-md-4 col-sm-12">
+              <img
+                src="https://acsrecycling.es/wp-content/uploads/2020/06/reciclaje-aparatos-intercambio-de-temperatura.png"
+                alt="">
+              <h5>FR1 – Aparatos de intercambio de temperatura</h5>
+              <p class="justify">Frigoríficos, congeladores, aparatos que suministran automáticamente
+                productos fríos, aparatos de aire acondicionado, equipos de deshumidificación,
+                bombas de calor, radiadores de aceite y otros.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="https://acsrecycling.es/wp-content/uploads/2020/06/reciclaje-monitores-y-pantallas.png" alt="">
+              <h5>FR2 – Monitores y pantallas</h5>
+              <p class="justify">Pantallas, televisores, marcos digitales para fotos
+                con tecnología LCD, monitores, ordenadores portátiles.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="https://acsrecycling.es/wp-content/uploads/2020/06/lampara-1.png" alt="">
+              <h5>FR3 – Lámparas</h5>
+              <p class="justify">Lámparas fluorescentes rectas, lámparas fluorescentes compactas,
+                lámparas fluorescentes, lámparas de descarga de alta intensidad, incluidas las
+                lámparas de sodio de presión y las lámparas de haluros metálicos.</p>
+            </div>
+
+          </div>
+
+          <div class="row" id="section2" style="display:none;">
+
+            <h2 class="py-2">Segunda Division</h2>
+            <div class="col-md-4 col-sm-12">
+              <img src="https://acsrecycling.es/wp-content/uploads/2020/06/impresion.png" alt="">
+              <h5>FR4 – Grandes aparatos (>50cm)</h5>
+              <p class="justify">Lavadoras, secadoras, lavavajillas,cocinas y
+                hornos eléctricos, hornillos eléctricos, placas de calor eléctricas, luminarias;
+                aparatos de reproducción de sonido o imagen, equipos de música.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="https://acsrecycling.es/wp-content/uploads/2020/06/licuadora.png" alt="">
+              <h5>FR5 – Pequeños aparatos (<50cm) </h5>
+                  <p class="justify">Aspiradoras, limpiamoquetas, máquinas de coser, luminarias, hornos
+                    microondas, aparatos de ventilación, planchas, tostadoras, cuchillos eléctricos,
+                    hervidores eléctricos, relojes, maquinillas de afeitar eléctricas, básculas, aparatos
+                    para el cuidado del pelo y el cuerpo, calculadoras, aparatos de radio, videocámaras,
+                    aparatos de grabación de vídeo.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="https://acsrecycling.es/wp-content/uploads/2020/06/lampara-1.png" alt="">
+              <h5>FR6 – Aparatos informáticos y de telecomunicaciones con componentes peligrosos</h5>
+              <p class="justify">Teléfonos móviles, GPS, calculadoras de bolsillo, ordenadores
+                personales, impresoras, teléfonos, cartuchos de impresión y tóner con partes
+                eléctricas.</p>
+            </div>
+
+          </div>
+
+
+          <div class="row" id="section3" style="display: none;">
+
+            <h2 class="py-2">Tercera Division</h2>
+            <div class="col-md-12 col-sm-12">
+              <img src="https://acsrecycling.es/wp-content/uploads/2020/06/fotovoltaica.png" alt="">
+              <h5>FR7 – Paneles fotovoltaicos</h5>
+              <p class="justify">Según se establece en el anexo III del real decreto, la Directiva
+                de 2012 reduce estas categorías a 6 pero se ha considerado adecuado separar los paneles
+                fotovoltaicos en una nueva categoría dada la singularidad de este tipo de aparatos, de
+                larga vida media y perfil profesional para que no distorsione las cuotas y objetivos
+                de recogida anuales del resto de aparatos eléctricos con características más similares.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button id="salirT" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="display: none;">Salir</button>
+          <button type="button" class="btn btn-success" id="siguienteT">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="principio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Objetivos principales del principio EPR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+
+          <div class="row">
+
+            <h2 class="py-2">Objetivos principales</h2>
+            <div class="col-md-4 col-sm-12">
+              <img src="img/1.png" alt="" width="200">
+              <h5>Objetivo 1</h5>
+              <p class="justify">Los fabricantes serán incentivados para mejorar el
+                diseño ambiental de sus productos y el desempeño
+                ambiental del suministro de dichos productos.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/2.png" alt="" width="200">
+              <h5>Objetivo 2</h5>
+              <p class="justify">Los productos deben alcanzar una alta tasa de
+                utilización.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/3.png" alt="" width="200">
+              <h5>Objetivo 3</h5>
+              <p class="justify">Los materiales deben conservarse mediante una
+                recolección, tratamiento, reutilización y reciclaje
+                eficaces y ecológicos</p>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="convenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Convenio de Basilea</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h2>Convención de Basilea</h2>
+          <p class="justify">
+            Control de los movimientos transfronterizos de los desechos peligrosos y su eliminación es el tratado
+            multilateral de medio ambiente que se ocupa más exhaustivamente de los residuos peligrosos y otros desechos.
+            <br>
+            Cuenta con 170 países miembros (Partes) y su objetivo es proteger el medio ambiente y la salud humana contra
+            los efectos nocivos derivados de la generación, el manejo, los movimientos trasfronterizos y la eliminación
+            de los desechos peligrosos y otros desechos.
+          </p>
+          <img src="https://0901.static.prezi.com/preview/v2/ab3lvojsjqijscmj6whqpwj7bt6jc3sachvcdoaizecfr3dnitcq_3_0.png" alt="" width="400">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
   <div class="modal fade" id="conclusion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -236,7 +424,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          
+
           <h2 class="letras">
             Pensando en un mundo mejor
             <div class="mask">
@@ -247,18 +435,18 @@
           </h2>
 
           <p class="justify container">
-            Particularmente no tengo nada en contra de la tecnología, 
-            por el contrario, soy un seguidor de esta y me gusta actualizarme en cuanto a 
-            celulares, computadores y todas aquellas aplicaciones que me ayudan a realizar mis 
+            Particularmente no tengo nada en contra de la tecnología,
+            por el contrario, soy un seguidor de esta y me gusta actualizarme en cuanto a
+            celulares, computadores y todas aquellas aplicaciones que me ayudan a realizar mis
             labores profesionales y personales. Pero lo que trataré en este animación mostrando
-            las distintas huellas y la cultura ambiental para que a su vez cree una  
-            sensibilización en el cuidado del medio ambiente y las consecuencias que deja la 
+            las distintas huellas y la cultura ambiental para que a su vez cree una
+            sensibilización en el cuidado del medio ambiente y las consecuencias que deja la
             sociedad del consumo frente a la tecnología.
-            El motivo de esta animación es para que todas las personas seamos responsables 
-            del ciclo de vida de los residuos electrónicos dándoles el uso adecuado. 
-            Si vamos a adquirir un nuevo aparato, aseguremos que el viejo cumpla su vida 
-            útil regalándolo o enviándolo a recicladores de material electrónico. De esta manera 
-            generamos esta cultura en la familia, en el trabajo y en los lugares donde nos encontremos 
+            El motivo de esta animación es para que todas las personas seamos responsables
+            del ciclo de vida de los residuos electrónicos dándoles el uso adecuado.
+            Si vamos a adquirir un nuevo aparato, aseguremos que el viejo cumpla su vida
+            útil regalándolo o enviándolo a recicladores de material electrónico. De esta manera
+            generamos esta cultura en la familia, en el trabajo y en los lugares donde nos encontremos
             para brindar una vida saludable a nuestras futuras generaciones.
           </p>
 
@@ -276,6 +464,8 @@
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+
+
 
   <script src="js/script.js"></script>
 

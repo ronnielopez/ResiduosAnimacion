@@ -27,37 +27,37 @@ for (let col = 0; col < cols; col++) {
   let img = document.createElement('img');
   img.src = images[current];
   el.appendChild(img);
-  if(current === 0){
+  if (current === 0) {
     setTimeout(() => {
-    info.style.display = "block";
-    info2.style.display = "none";
-    info3.style.display = "none";
-    info4.style.display = "none";
-  }, 200);
+      info.style.display = "block";
+      info2.style.display = "none";
+      info3.style.display = "none";
+      info4.style.display = "none";
+    }, 200);
   }
-  else if(current === 1){
-    setTimeout(() => {  
+  else if (current === 1) {
+    setTimeout(() => {
       info.style.display = "none";
       info2.style.display = "block";
       info3.style.display = "none";
       info4.style.display = "none";
-     }, 2000);
+    }, 2000);
   }
-  else if(current === 2){
-    setTimeout(() => {  
-    info.style.display = "none";
-    info2.style.display = "none";
-    info3.style.display = "block";
-    info4.style.display = "none";
-  }, 2000);
+  else if (current === 2) {
+    setTimeout(() => {
+      info.style.display = "none";
+      info2.style.display = "none";
+      info3.style.display = "block";
+      info4.style.display = "none";
+    }, 2000);
   }
-  else{
-    setTimeout(() => {  
-    info.style.display = "none";
-    info2.style.display = "none";
-    info3.style.display = "none";
-    info4.style.display = "block";
-  }, 2000);
+  else {
+    setTimeout(() => {
+      info.style.display = "none";
+      info2.style.display = "none";
+      info3.style.display = "none";
+      info4.style.display = "block";
+    }, 2000);
   }
   part.style.setProperty('--x', -100 / cols * col + 'vw');
   part.appendChild(el);
@@ -102,39 +102,39 @@ function go(dir) {
       img.src = images[current];
       next.appendChild(img);
       //Aqui
-      if(current === 0){
+      if (current === 0) {
         setTimeout(() => {
-        info.style.display = "block";
-        info2.style.display = "none";
-        info3.style.display = "none";
-        info4.style.display = "none";
-      }, 2000);
+          info.style.display = "block";
+          info2.style.display = "none";
+          info3.style.display = "none";
+          info4.style.display = "none";
+        }, 2000);
       }
-      else if(current === 1){
-        setTimeout(() => {  
+      else if (current === 1) {
+        setTimeout(() => {
           info.style.display = "none";
           info2.style.display = "block";
           info3.style.display = "none";
           info4.style.display = "none";
-         }, 2000);
+        }, 2000);
       }
-      else if(current === 2){
-        setTimeout(() => {  
-        info.style.display = "none";
-        info2.style.display = "none";
-        info3.style.display = "block";
-        info4.style.display = "none";
-      }, 2000);
+      else if (current === 2) {
+        setTimeout(() => {
+          info.style.display = "none";
+          info2.style.display = "none";
+          info3.style.display = "block";
+          info4.style.display = "none";
+        }, 2000);
       }
-      else{
-        setTimeout(() => {  
-        info.style.display = "none";
-        info2.style.display = "none";
-        info3.style.display = "none";
-        info4.style.display = "block";
-      }, 2000);
+      else {
+        setTimeout(() => {
+          info.style.display = "none";
+          info2.style.display = "none";
+          info3.style.display = "none";
+          info4.style.display = "block";
+        }, 2000);
       }
-      
+
 
       if ((p - Math.max(0, dir)) % 2) {
         down(part, next);
@@ -253,13 +253,42 @@ setInterval(function () {
   const show = document.querySelector('span[data-show]')
   const next = show.nextElementSibling || document.querySelector('span:first-child')
   const up = document.querySelector('span[data-up]')
-  
+
   if (up) {
     up.removeAttribute('data-up')
   }
-  
+
   show.removeAttribute('data-show')
   show.setAttribute('data-up', '')
-  
+
   next.setAttribute('data-show', '')
 }, 2000)
+
+
+let bandera = 1;
+
+$("#siguienteT").click(() => {
+  //primera division
+  if (bandera === 1) {
+    $("#section1").hide();
+    $("#section2").show();
+    bandera++;
+  }
+  //segunda division
+  else if(bandera === 2){
+    $("#section2").hide();
+    $("#section3").show();
+    $("#siguienteT").hide();
+    $("#salirT").show();
+  }
+})
+
+$("#salirT").click(()=>{
+  bandera = 1;
+  $("#section1").show();
+  $("#section3").hide();
+  $("#salirT").hide();
+  $("#siguienteT").show();
+})
+
+
